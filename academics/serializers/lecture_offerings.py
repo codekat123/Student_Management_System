@@ -9,6 +9,7 @@ class LectureOfferingSerializer(serializers.ModelSerializer):
      semester = SemesterSerializer(read_only=True)
      lecture = LectureSerializer(read_only=True)
      professor = ProfessorListSerializer(read_only=True)
+     
      class Meta:
           model = LectureOffering
           fields = ['semester','lecture','professor']
