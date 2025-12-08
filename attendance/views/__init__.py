@@ -1,0 +1,2 @@
+from .attendance_session import AttendanceSessionView
+from .atttendance_record import AttendanceRecordView
