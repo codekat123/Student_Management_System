@@ -1,9 +1,11 @@
 from django.urls import path
-from .views import EnrollmentView
 from rest_framework.routers import DefaultRouter
+from .views import MaterialView
 
-app_name = 'enrollment'
+app_name = 'materials'
 
 router = DefaultRouter()
-router.register(r"",EnrollmentView,basename='enrollment')
+
+router.register(r'',MaterialView,basename='material')
+
 urlpatterns = router.urls

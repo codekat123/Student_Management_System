@@ -1,9 +1,10 @@
 from django.urls import path
-from .views import EnrollmentView
 from rest_framework.routers import DefaultRouter
+from .views import AnnouncementView
 
-app_name = 'enrollment'
+
+app_name='announcement'
 
 router = DefaultRouter()
-router.register(r"",EnrollmentView,basename='enrollment')
+router.register(r'',AnnouncementView,basename='announcement')
 urlpatterns = router.urls

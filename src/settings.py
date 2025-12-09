@@ -31,6 +31,8 @@ INSTALLED_APPS = [
     'enrollment',
     'attendance',
     'grades',
+    'materials',
+    'announcement',
 ]
 
 MIDDLEWARE = [
