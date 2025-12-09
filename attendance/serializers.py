@@ -9,11 +9,11 @@ class AttendanceSessionSerializer(serializers.ModelSerializer):
         fields = [
             "id",
             "lecture_offering",
-            "session_date",
-            "status",
-            "created_at",
+            "start_time",
+            "end_time",
+            "date",
         ]
-        read_only_fields = ["id", "created_at"]
+        read_only_fields = ["id"]
 
     def validate(self, attrs):
         if attrs["session_date"] < timezone.now().date():

@@ -4,8 +4,8 @@ from rest_framework.routers import DefaultRouter
 
 
 router = DefaultRouter()
-router.register(r"sesssion/",AttendanceSessionView,basename='attendance_session')
-router.register(r"record/",AttendanceRecordView,basename='attendance_record')
+router.register(r"sesssion",AttendanceSessionView,basename='attendance_session')
+router.register(r"record",AttendanceRecordView,basename='attendance_record')
 
 app_name = 'attendance'
 
